@@ -1,0 +1,9 @@
+1. Kako brise SSD so blokovi nacrtano da napises
+2.HDD SCAN algoritmot kako raboti glavata na hdd I prednosti I slabosti I
+da nacrtas na slika dadena kako kje ide glavata dadeno ti e sektori nakoj treba da pomine
+3.Napisi psevdo kod za DMA I daj primer
+4.od sto e sostaven hdd a od sto 1 particija, da se nacrta, toa so blokovi
+5.Next fit I best fit algoritmite da se resi zadacata so niv
+6.Zadaca 85% hit u TLB so 40 nsec pristap I 100 nsec za pristap do tabela na stranica (0.85 x 40 + 0.15 x 100)
+7.15 recenici da kazes da/ne
+sekoja po 1 bod nosi, ako utnes -1

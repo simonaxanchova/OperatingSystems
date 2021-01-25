@@ -1,0 +1,54 @@
+﻿1)(10) a) Pri povikuvanje na fork se kreira nov dete proces so isti kod kako tatkoto. Kako ke zname vo kodot koga se izvrsuva tatkoto, a koga deteto
+\\fork() vraka PID na deteto, ako go zacuvame toj PID vo promenliva mozeme da znaeme koj proces vo koj moment se izvrusva.
+b) daj primer kod koga tatkoto i deteto izvrsuvaat razlicen kod
+pom=fork();
+if(pid==pom) //proverka dali pid e ist so deteto
+printf("Dete");
+else printf("Tatko");
+2)(6) Imame 2 procesi edniot e CPU dominanten drugiot e IO dominanten. Za sistemot da se izvrsuva pobrzo or shit, koj proces treba da mu dadam prioritet. // treba da mu dademe prioritet na CPU - dominanten.
+3)(4) Imame '_____' MBR (master boot record) i imame '_____' boot sektori
+// 'insert odgovor' bea ponudeni, eden, nula, dva, poveke, deset
+4)(4) Pri contex switch dali se koristi kernelot...
+// tocno, netocno. Zaokruzi...
+5)(13poeni) Koj e nedostatokot na pitersonovoto resenie, koe ponatamu so upotrebata na semafori se nadminuva.
+// Kaj pitersonovo resenie koristime flag za da znaeme koj proces e na red za da vleze vo kriticen region
+ako imame flag==true za poveke procesi, ke nastane blokada.
+6)(15) a) Imame inode so 12 jazli i imame 1 za single, double i triple indirect block. Pokazuvacite se dolgi 4B=2^10, aa blokovite se golemi 4KB. Kolku podatoci mozeme da smestime imajki ja ovaa struktura
+// Znaci imame 9 jazli koi pokazuvaat kon 4KB, vo 4KB mozeme da smestime 4KB/4B pokazuvaci = 1024 pokazuvaci. Vkupna memorija koja mozeme da smestime e (9*2^12 + 2^10 * 2^12 + 2^20 * 2^12 + 2^30 * 2^12)B
+b) Imame 128GB=2^37 disk iii sekoj blok na diskot e golem 8KB=2^13. Ako koristime FAT (i FAT go cuvame vo memorija) kolku od diskoviot prostor ke iskoristi FAT.
+// 2^37/2^13 = 2^24 blokovi, odnosno 2^24 pokazuvaci. FAT ke koristi 3B*2^24 od celiot disk.
+7.(8) Imame 6 diska site po 5TB, imame RAID 0, 10, 5. Kolkav diskov prostor imame za soodvetniot RAID. Kolku minimum diksovi treba da padnat za sistemot da padne. Kolku maksimum diskovi treba da padnat za sistemot da opstane.
+8.(6) Sto e prednosta ne elevator algoritmo vs shortest seek time.
+9.(12) Zadaca so blokada, grafik neso ova ona, nacrtaj dijagam za resusri bla bla.
+10.(12 poeni) Imame 3 programi, so 3 binarni semafori S1,S2,S3. Daj edno scenario kade sto ke nastane blokada.
+prog1()    
+down(S1)
+down(S2)
+down(S3)
+criticen region
+up(S3)
+up(S2)
+up(S1)
+-----
+prog2()
+down(S2)
+down(S3)
+down(S1)
+criticen region
+up(S1)
+up(S3)
+up(S2)
+-----
+prog3()
+down(S3)
+down(S1)
+down(S2)
+criticen region
+up(S2)
+up(S1)
+up(S3)
+// Ako site 3 programi imaat dovolno vreme vo procesor taka da ke mozat da izvrsat samo edna linija kod. Odnosno prog1 ke uspee da go izvrsi down(S1) i ke iskoci od procesor, prog2 ke uspee da izvrsi down(S2) i ke iskoci od procesor, prog3 ke uspee da izvrsi down(S3) i ke iskoci od procesor.
+11)(18 poeni) Zadaca so stranicenje. Imame stranici golemi 4096B i imame 22 biten zbor za virtuelnata adresa.
+a) Kolku bita treba za virtuelnata adresa, a kolku treba za offsetot.
+b) Kolkava ke bide tabelata na stranici
+c)

@@ -1,0 +1,35 @@
+﻿1.(10 poeni)Da se nacrta drvoto na procesi za sledniov kod
+//....... Nebiten kod
+for(int i=0;i<=1;i++)
+        for(int j=0;j<=1;j++){
+                fork();
+                printf("Nesto... xD")
+}
+//....... Nebiten kod
+2.(5 poeni) Prasanje so zaokruzuvanje. Ponudeni bea 6+ odgovori, moze da ima poise tocni
+//Ne se sekavam sto bese prasanjeto :(
+3.(7+8 poeni) Sto se cuva vo memorija od thread control block za threads od isti proces. A sto se cuva vo memorija za threads od razlicen proces.
+4.(10 poeni) Nabroj gi 4tirite slucai koga moze da nastane blokada.
+5.(10 poeni) Imame dva procesi P0 i P1. I imame dva semafori S i Q i dvata se postaveni na 1. Objasni sto ke se sluci koga P1 procesot ke pristigne malku pobrzo od P0 prosesot
+P0 code..               P1 code...
+wait(S)                 wait(S)
+wait(Q)                 wait(Q)
+.                       .
+.                       .
+.                       .              
+signal(Q)               signal(Q)
+signal(S)               signal(S)
+6.(5 poeni) Prasanje so zaokruzuvanje. Ponudeni bea okolu 8+ odgovori. Trebase da se zaokruzi sto e tocno za stranicenje.
+Goleminata na stranicite zavisi od goleminata na virtuelnata memorijata. -||- od goleminata na fizickata memorija... Uste nekoi od sto zavisi goleminata na stranicite. Kako se indeksirani strancite, spored ramka, spored stranica, inode, hesh tabela...Iiii kakvo e presmetuvanjeto na fizickata adresa, sekvencijalno i kontinuirano ili varijabilno. // od slednive da se zaokruzi sto e tocno.
+7.(10 poeni) Gi imame slednive procesi A,B,C,D i E so vreme na izvrsuvanje soodvetno 10, 10, 33, 22, 15. I dadeni se nivni vreminja na prisignuvanje 25, 10, 5, 0, 20 soodvetno.
+a) Da se nacrta Gantogramot koristejki go Shortest job Next
+b) Da se kazat vreminjata na odziv za sekoj od procesite ako smetame deka procesot dava odziv 2 ms od pocetokot na izvrsuvanje.
+8.(10 poeni) Imame blokovi od po 100k, 200k, 300k, 500k i 600k. Treba da se alocira slednava memorija po ovoj redosled 210k, 390k, 110k, 350k. Najdi:
+First Fit, Next Fit, Best Fit, Worse Fit.
+9.(7+8 poeni) Imame inode so 16 jazli iii imame po 1 jazel za signle, dobule i triple indirect block. Imame podatoci so golemina od 2gb. Da se najde memorijata potrebna za metapodatocite i za blokovite.
+10.(10 poeni) Imame 10 diska so 2 (Gb ili Tb bea ), da se popolni slednava tabela:
+                          broj na blokovi za soodvetniot|manimalen broj na diskovi|maksimalen broj na disk      
+                          raid or something             |za da sistemot padne     |za sistemot da opstane
+raidX (zaboraiv koj bese)|                              |                         |    
+raid 5                   |                              |                         |    
+raid 10                  |                              |                         |

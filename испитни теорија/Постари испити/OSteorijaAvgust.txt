@@ -1,0 +1,26 @@
+1. Navedi pogodnosti i problemi na kodot.
+while(turn != 0); //loop while(turn != 1); //loop
+critical_region(); critical_regione();
+turn = 1;  turn = 0;
+noncritical_region(); noncritical_region();
+ 
+2.Navedi gi razlikite megu sistemskite povici fork() i clone()
+ 
+3. Da se opise rabotata na windows so prioriteti.
+ 
+4.Proces bara 9MB memorija. Strukturata na tabela za stranici e dvonivovska so 32 biten adresen prostor. Stranica e 4KB. Da se najde kolku memorija e potrebna za tabelata na stranici za procesot. Adresata e od oblik: Dir-Page-Offset (10bita - 10 bita - 12 bita)
+ 
+5. Da se skicira kod za rabota na I/O so DMA komunikacija.
+ 
+6. Dadena niza od blokovi obelezana vo Blocks in Use i Free blocks:
+pr:
+1 0 1 0 0 1 1 1 0 0 0
+0 1 0 2 1 0 0 0 1 1 1
+Kade e problemot, i sto ke se sluci po izvrsuvanje na SCANDISK i FSCK?
+ 
+7. Da se skicira izgledot na ext2 datotecen sistem.
+ 
+8. Razgledajte inodes so 9 direktni pokazuvaci, 1 indirekten i 1 dvoen. Blokovite za podatoci i inodes se po 4KB, a sekoj pokazuvac po 4B. 
+a) kako ke izgleda smestuvanjeto na 37KB datoteka.
+b) kolkava e maksimalnata golemina na datoteka sto moze da se smesti vo istiot prostor?
+c) za da se procita 1035 blok od datotekata, kolku blokovi pred toa treba da se pominat?

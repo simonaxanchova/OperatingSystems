@@ -1,0 +1,19 @@
+- so e kriticen region 
+	pr. def. spored Paterson
+- daden kod, mu fali nekoja instrukcija - dopolnuvanje
+- sto se monitori, opis, upotreba
+- dali e optimalen kodot
+- linux jadro, da skicirame ili da opiseme dadena slika
+- fork vs exec
+- sto se cuva za eden proces
+- clone vs fork
+- mapiranje niski kaj linux
+- raspredeluvanje linux/windows
+- proriti inversion
+- deka ke ima pretvaranje na fizicka vo virtuelna adresa,
+- dadena slika - sto ke javi taa referenca
+	pr. odgovor: taa i taa adresa, page fault i sl.
+
+
+
+od prv: diagramot za premin niz sostojbi, objasnuvanje za monitori i semafori, objasnuvanje za fork instrukcija, sto e priority inversion, onaa zadacata so dvonivovski tabeli nekoi, i kvazi-zadacata so odnosot megu golemina na fragmenti i broj na fragmenti: sto e podobro, pomal broj pogolemi blokovi, ili pogolem broj pomali blokovi, i da se dopise i izvede formulata za najdobar odnos brojnablokovi/goleminanablokovi, ili slicno bese

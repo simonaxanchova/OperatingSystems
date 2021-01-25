@@ -1,0 +1,28 @@
+Koi se funkciite na procesorot kaj
+a)programmed IO
+b) interrupt driven IO
+v)IO so DMA
+
+Za SSD prashanja na dopolnuvanje, za raid isto, ke citas od tie sto se pod crtezcinjata za raid
+
+Objasni implementacija na datotecen sistem. Sto prai Master Boot record?
+
+Maksimalna golemina na datoteka vo ext2. Objasni kako rabotat datoteki so i-nodes
+
+Edna zadaca da se presmeta cylinder skew
+
+Low level formatting. Sporedba SSD so HDD. DMA. iNodes
+
+Programmed I/O (?????????? ?????)
+Interrupt-Driven I/O (?????????
+?????)
+I/O ?? DMA
+
+
+
+MBR i da se objasni kako raboti datotecen sistem (ova e toa nejasnoto prasanje)
+- i nodes i kolkava moze da bide max golemina vo ext2 ..(tabelata od predavanjeto )
+- sto se slucuva i kako se resava pad na sistem
+-koga e aktiven procesorot pri trite vida prekini
+-da se presmeta cilinder skew so dadeni vrednosti
+-prasanja na zaokruzuvanje od RAID i SSD

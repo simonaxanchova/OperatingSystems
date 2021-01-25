@@ -1,0 +1,65 @@
+///////////////////////////////////////////////--------  ISPIT JUNI  --------///////////////////////////////////////////////
+
+#!/bin/bash
+
+#echo ""|cat>out.txt
+
+korisnik=$1
+nizaCas=`who|grep $korisnik|awk '{print $4;}'|cut -f 1 -d ':'`
+nizaMin=`who|grep $korisnik|awk '{print $4;}'|cut -f 2 -d ':'`
+#echo "${nizaCas[0]} : ${nizaMin[0]}"
+
+CurrCas=`date|cut -f 5 -d ' '|cut -f 1 -d ':'`
+CurrMin=`date|cut -f 5 -d ' '|cut -f 2 -d ':'`
+vkCurrMin=`expr $CurrCas \* 60 + $CurrMin`
+#echo "vkCurrMin $vkCurrMin"
+
+echo "$vkCurrMin-(${nizaCas[0]}*60+${nizaMin[0]})"|bc|cat>out.txt
+echo "`cat out.txt`"
+
+
+
+
+///////////////////////////////////////////////--------  ISPIT AVGUST  --------///////////////////////////////////////////////
+
+#! /bin/bash
+
+if [ ! $# -eq 1 ]
+then
+        echo "USAGE: ./prvaAvg.sh 'korisnik'"
+
+# ova so tarabite ne uspevase, dovolno e so echo za da raboti
+#       cat << HELP
+#               prvaAvg.sh -- prikazuva broj na deca procesi
+#
+#               USAGE: ./prvaAvg.sh 'korisnik(indeks)'
+#
+#               EXAMPLE: ./prvaAvg.sh 123456
+#       HELP
+               exit 0
+fi
+
+kor=$1
+procesi=`ps -aF|grep "^$kor"|awk '{print $3;}'`
+unique=`ps -aF|grep "^$kor"|awk '{print $3;}'|uniq`
+c=0
+#echo "korisnik: $kor"
+#echo "procesi: $procesi"
+#echo "unique: $unique"
+
+echo ""|cat>outAvg.txt
+
+for u in $unique
+do
+        c=0
+        for p in $procesi
+        do
+                if [ $u = $p ]
+                then
+                        c=$(expr $c + 1)
+                fi
+        done
+        echo "$u  $c"|cat>>outAvg.txt
+done
+
+echo "`cat outAvg.txt`"

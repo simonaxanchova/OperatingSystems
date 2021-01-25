@@ -1,0 +1,28 @@
+grupa 1 kol 1 2015/2016.
+(5)kolku kje se ispecati sekoja od bukvite?
+	printf("m");
+	int p = fork();
+	if(p== 0)
+	{
+	    printf("n");
+	    fork()
+	    printf(o);
+	}
+	else{
+	    printf("p");
+	}
+(20)da se nacrtaat gantogramite za A,B,C,D doagjanje vo sistem 0 , 20 ,50 ,120 a traenje :50,70,40,30:
+a)za FCFS
+b)za SRTN
+c)za Priority (non-preemptive)
+d)da se najde koj od FCFS,SJF,SRTN imal najmalo sredno vreme na cekanje i da se napise.
+(10)Koja e metrikata na alogritmot za rasporeduvanje kaj (batch) sistemite?
+(10)Koj e maksimalniot broj na procesi koj kje se izvrast dokolku site procesi imaat perioda na pristignuvanje 40ms a se izvrsuvaat 5ms i se isti?
+(10)Navedete go problemot na readers i writers i objasnete go resenieto so semafori.
+(10)Sto se koristi za nadminuvanje na blokirana sostojba nabrojte i objasnete.
+(10)Dadeno e tabela so procesi P0,P1,P2,P3,P4 i tie imaat vekje alocirano A,B resursi i kolku baraat isto vo tabelata na raspolaganje imame 2 i 1 resurs od A,B za rasporeduvanje
+prasanjeto e : dali moze da mu se dodelat tie resursi na P3 odgovor Da, Ne so objasnuvanje zaso Da ili zaso Ne.
+(10)Objasni go metodot za isklucuvanje na interrupti i navedi koj mu e nedostatokot.
+(15)15-20 recenici dadeni zaokruzi koj se tocni za netocen zaokruzen odgovor -1 poen.
+(10) producer-consumer
+(10)Rasporeduvanje kaj sistemi vo realno vreme

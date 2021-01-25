@@ -1,0 +1,50 @@
+#!/usr/bin/python
+import os, sys
+
+pro=os.popen('ps aux')
+
+proces=pro.readlines()
+
+user={}
+mapa={}
+id=0
+for line in proces:
+	word=line.split()
+	x=word[0]
+	if x in user.keys():
+		temp=user[x]+1
+		user[x]=temp
+	else:
+		user[x]=1
+	mapa[id]=line
+	id=id+1
+
+start=0
+end=10
+
+while 1==1:
+	print "USER PROCESSES"
+	for key,value in user.items():
+		print key,value
+	for i in range(start,end):
+		print i," ",mapa[i]
+
+	x=raw_input('vnesete n za sledno, b za nazad, q za quit')
+	os.system('clear')
+	if x == "b":
+		if start == 0:
+			start=0
+			end=10
+		else:
+			start=start-10
+			end=end-10
+	if x == "n":
+		if end == id:
+			start=start
+			end=end
+		else:
+			end=end+10
+			start=start+10
+	if x == "q":
+		os.system('clear')
+		sys.exit("Programata e zatvorena")				
